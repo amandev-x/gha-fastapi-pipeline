@@ -13,4 +13,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print Hello
-              run: echo "Hello, World!"
+              run: echo "Changed files detected. Running CI pipeline..."
