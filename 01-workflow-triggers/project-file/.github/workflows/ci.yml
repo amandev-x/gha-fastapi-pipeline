@@ -1,0 +1,10 @@
+name: "01 - Understanding Workflow Triggers"
+
+on: push 
+
+jobs:
+    event-info-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Trigger Event
+              run: echo "My Trigger event is ${{ github.event_name }}"
