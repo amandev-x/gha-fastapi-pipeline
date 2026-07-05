@@ -9,8 +9,8 @@ on:
     workflow_dispatch:
 
 jobs:
-    hello:
+    event-info-job:
         runs-on: ubuntu-latest
         steps:
-            - name: Print Hello
-              run: echo "Changed files detected. Running CI pipeline..."
+            - name: Print Trigger event
+              run: echo "Trigger event is ${{ github.event_name }}"
